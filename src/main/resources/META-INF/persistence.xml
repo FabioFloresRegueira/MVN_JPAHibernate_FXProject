@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+	
+	<!-- ////////////////////////////////// -->
+	<!-- Persistencia SQL SERVER            -->
+	<!-- ////////////////////////////////// -->
+	<persistence-unit name="SQLSERVER_SV-db01"
+		transaction-type="RESOURCE_LOCAL">
+		<description> ARQUIVO DE PERSISTÊNCIA JPA E HIBERNATE</description>
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+		<properties>
+			<property name="javax.persistence.jdbc.driver"
+				value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:sqlserver://10.9.1.34:1433" />
+			<property name="javax.persistence.jdbc.user" value="cervello" />
+			<property name="javax.persistence.jdbc.password"
+				value="Q!W@E#R$T%"/>
+
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.SQLServerDialect" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+		</properties>
+	</persistence-unit>
+
+
+</persistence>
