@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewFXML.FXMLClienteController">
+   <children>
+      <AnchorPane prefHeight="161.0" prefWidth="450.0">
+         <children>
+            <TextField fx:id="txtid" layoutX="14.0" layoutY="40.0" />
+            <TextField fx:id="txtnome" layoutX="184.0" layoutY="40.0" />
+            <TextField fx:id="txtemail" layoutX="14.0" layoutY="101.0" prefHeight="25.0" prefWidth="321.0" />
+            <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" />
+            <Text layoutX="185.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" />
+            <Text layoutX="17.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail:" />
+            <Button fx:id="btsalvar" layoutX="368.0" layoutY="23.0" mnemonicParsing="false" onAction="#OnbtsalvarAction" text="Salvar" />
+            <Button fx:id="btRemover" layoutX="360.0" layoutY="63.0" mnemonicParsing="false" onAction="#onbtnRemoveAction" text="Remover" />
+            <Button fx:id="btBuscar" layoutX="367.0" layoutY="109.0" mnemonicParsing="false" onAction="#onbtnBuscarAction" text="Buscar" />
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
-
